@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name">Laboratorio01</string>
+    <string name="welcome">Bienvenido a</string>
+    <string name="mobile_device">Programación de Dispositivos Móviles</string>
+</resources>
