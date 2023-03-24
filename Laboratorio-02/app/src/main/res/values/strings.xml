@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">IBM-Calculator</string>
+    <string name="title_app">BMI</string>
+    <string name="_70">70</string>
+    <string name="kg">KG</string>
+    <string name="cm">cm</string>
+</resources>

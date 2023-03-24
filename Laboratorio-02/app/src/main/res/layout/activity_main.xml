@@ -1,0 +1,172 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="@dimen/parent_padding"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:layout_marginBottom="8dp"
+        style="@style/TextAppearance.MaterialComponents.Headline5"
+        android:textStyle="bold"
+        android:text="@string/title_app" />
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        app:cardBackgroundColor="@color/black"
+        app:cardCornerRadius="@dimen/parent_padding"
+        android:layout_marginBottom="20dp"
+       >
+        <LinearLayout android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="bottom"
+            android:background="@color/black"
+            android:orientation="vertical"
+            android:padding="@dimen/parent_padding" >
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/white"
+                android:textStyle="bold"
+                android:layout_marginTop="@dimen/medium_padding"
+                android:layout_marginBottom="@dimen/medium_padding"
+                style="@style/TextAppearance.AppCompat.Headline"
+                android:text="Weight" />
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+                <EditText
+                    android:layout_width="@dimen/text_size_input"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/white"
+                    style="@style/TextAppearance.MaterialComponents.Headline2"
+                    android:hint="@string/_70"
+                    android:textColorHint="@color/gray"
+                    android:inputType="numberDecimal" />
+                <TextView
+                    android:layout_width="wrap_content"
+                    style="@style/TextAppearance.MaterialComponents.Headline5"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/white"
+                    android:layout_marginLeft="@dimen/medium_padding"
+                    android:text="@string/kg" />
+        </LinearLayout>
+
+        </LinearLayout>
+
+    </androidx.cardview.widget.CardView>
+
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        app:cardBackgroundColor="@color/black"
+        app:cardCornerRadius="@dimen/parent_padding"
+        android:padding="@dimen/parent_padding"
+        android:layout_marginBottom="@dimen/margin_bottom"
+        >
+        <LinearLayout android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="bottom"
+            android:background="@color/black"
+            android:orientation="vertical"
+            android:padding="@dimen/medium_padding" >
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/white"
+                android:textStyle="bold"
+                android:layout_marginTop="8dp"
+                android:layout_marginBottom="8dp"
+                style="@style/TextAppearance.AppCompat.Headline"
+                android:text="Height" />
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+                <EditText
+                    android:layout_width="@dimen/text_size_input"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/white"
+                    style="@style/TextAppearance.MaterialComponents.Headline2"
+                    android:hint="160"
+                    android:textColorHint="@color/gray"
+                    android:inputType="numberDecimal" />
+                <TextView
+                    android:layout_width="wrap_content"
+                    style="@style/TextAppearance.MaterialComponents.Headline5"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/white"
+                    android:layout_marginLeft="8dp"
+                    android:text="@string/cm" />
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </androidx.cardview.widget.CardView>
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Calculate"
+        android:textAllCaps="true"
+        android:textColor="@color/white"
+        android:padding="@dimen/medium_padding"
+        android:layout_marginBottom="@dimen/parent_padding"
+        />
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        app:cardBackgroundColor="@color/black"
+        app:cardCornerRadius="@dimen/parent_padding"
+        android:padding="@dimen/parent_padding"
+        android:layout_marginBottom="@dimen/margin_bottom"
+        >
+        <LinearLayout android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="bottom"
+            android:background="@color/black"
+            android:orientation="vertical"
+            android:padding="@dimen/parent_padding" >
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/white"
+                android:textStyle="bold"
+                android:layout_gravity="center"
+                android:layout_marginTop="@dimen/medium_padding"
+                android:layout_marginBottom="@dimen/medium_padding"
+                style="@style/TextAppearance.MaterialComponents.Headline2"
+                android:text="21.78" />
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textColor="@color/green"
+                android:gravity="center"
+                android:textStyle="bold"
+                style="@style/TextAppearance.MaterialComponents.Headline6"
+                android:text="Healthy"/>
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:textColor="@color/gray"
+                android:text="(Normal range is 18.5 0 24.9)" />
+
+        </LinearLayout>
+
+    </androidx.cardview.widget.CardView>
+
+</LinearLayout>
