@@ -9,4 +9,12 @@
     <color name="white">#FFFFFFFF</color>
     <color name="gray">#808080</color>
     <color name="green">#008000</color>
+    <!-- Custom colors -->
+    <color name="dark_navy_blue">#101336</color>
+    <color name="medium_navy_blue">#26294C</color>
+    <color name="medium_gray">#767b8e</color>
+    <color name="red_pink">#FF0062</color>
+    <color name="light_blue">#37BEFD</color>
+    <color name="medium_orange">#FF9800</color>
+    <color name="dark_orange">#FF5722</color>
 </resources>

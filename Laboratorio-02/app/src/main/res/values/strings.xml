@@ -1,7 +1,15 @@
 <resources>
-    <string name="app_name">IBM-Calculator</string>
+    <string name="app_name">BMI</string>
     <string name="title_app">BMI</string>
     <string name="_70">70</string>
     <string name="kg">KG</string>
     <string name="cm">cm</string>
+    <string name="weight">Weight</string>
+    <string name="calculate">Calculate</string>
+    <string name="result_description">(Normal range is 18.5 0 24.9)</string>
+    <string name="result_healthy">Healthy</string>
+    <string name="result_underweight">Underweight</string>
+    <string name="result_overweight">Overweight</string>
+    <string name="result_obese">Obese</string>
+    <string name="result_ibm">21.12</string>
 </resources>
