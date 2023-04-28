@@ -4,5 +4,6 @@ data class MovieModel (
     val name: String,
     val category: String,
     val description: String,
-    val qualification: String
+    val qualification: String,
+    val imgName: String
 )

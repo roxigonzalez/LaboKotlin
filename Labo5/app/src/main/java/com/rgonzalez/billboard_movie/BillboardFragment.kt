@@ -11,9 +11,12 @@ import android.widget.Button
 import androidx.cardview.widget.CardView
 import androidx.fragment.app.activityViewModels
 import androidx.fragment.app.viewModels
+import androidx.lifecycle.ViewModelProvider
 import androidx.lifecycle.viewmodel.initializer
 import androidx.lifecycle.viewmodel.viewModelFactory
 import androidx.navigation.findNavController
+import androidx.recyclerview.widget.LinearLayoutManager
+import androidx.recyclerview.widget.RecyclerView
 import com.google.android.material.floatingactionbutton.FloatingActionButton
 import com.rgonzalez.billboard_movie.repositories.MovieRepository
 import com.rgonzalez.billboard_movie.ui.movie.MovieViewModel
@@ -26,14 +29,20 @@ class BillboardFragment : Fragment() {
 
     private lateinit var btnActionSend: FloatingActionButton
     private lateinit var movieCard: CardView
-
+    private lateinit var recyclerView: RecyclerView
 
     override fun onCreateView(
         inflater: LayoutInflater, container: ViewGroup?,
         savedInstanceState: Bundle?
     ): View? {
         // Inflate the layout for this fragment
-        return inflater.inflate(R.layout.fragment_billboard, container, false)
+        val view = inflater.inflate(R.layout.fragment_billboard, container, false)
+        recyclerView = view.findViewById(R.id.movies_recycler_view)
+        recyclerView.layoutManager = LinearLayoutManager(requireContext())
+
+        val adapter = viewModel.getMoviesAdapter(requireContext())
+        recyclerView.adapter = adapter
+        return view
     }
 
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
@@ -42,11 +51,16 @@ class BillboardFragment : Fragment() {
         Log.d("Movies", viewModel.getMovies().toString())
 
         btnActionSend = view.findViewById(R.id.addMovie)
-        movieCard = view.findViewById(R.id.card_one)
-        movieCard.setOnClickListener{
-            it.findNavController().navigate(R.id.action_billboardFragment3_to_movieFragment)
+        // todo: I need to reference the recycler view but I don't know how xd
+        // apparently we need to do in the adapter - not here
+        // for that reason the code below is commented
+        // Ima refactor soon ;)
 
-        }
+//        movieCard = recyclerView.findViewById(R.id.card_one)
+//        movieCard.setOnClickListener{
+//            it.findNavController().navigate(R.id.action_billboardFragment3_to_movieFragment)
+//
+//        }
         btnActionSend.setOnClickListener{
             it.findNavController().navigate(R.id.action_billboardFragment3_to_newMovieFragment)
         }
