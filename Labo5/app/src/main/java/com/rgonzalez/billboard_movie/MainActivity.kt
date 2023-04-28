@@ -2,11 +2,18 @@ package com.rgonzalez.billboard_movie
 
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
+import androidx.activity.viewModels
+import androidx.fragment.app.viewModels
 import androidx.navigation.NavController
 import androidx.navigation.fragment.NavHostFragment
 import androidx.navigation.ui.setupActionBarWithNavController
+import com.rgonzalez.billboard_movie.ui.movie.MovieViewModel
 
 class MainActivity : AppCompatActivity() {
+    private val viewModel: MovieViewModel by viewModels {
+        MovieViewModel.Factory
+    }
+
     private lateinit var navController: NavController
 
     override fun onCreate(savedInstanceState: Bundle?) {
