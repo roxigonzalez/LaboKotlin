@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="margintop20">20dp</dimen>
+    <dimen name="width_img">271dp</dimen>
+    <dimen name="height_img">179dp</dimen>
+    <dimen name="padding_medium">16dp</dimen>
+    <dimen name="height_100">100dp</dimen>
+    <dimen name="padding_min">8dp</dimen>
+    <dimen name="big_margin">36dp</dimen>
+</resources>
