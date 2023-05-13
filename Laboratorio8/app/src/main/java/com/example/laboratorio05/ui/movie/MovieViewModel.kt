@@ -51,7 +51,7 @@ class MovieViewModel(private val repository: MovieRepository) : ViewModel(){
         return true
     }
 
-    private fun clearData() {
+    fun clearData() {
         name.value = ""
         category.value = ""
         description.value = ""

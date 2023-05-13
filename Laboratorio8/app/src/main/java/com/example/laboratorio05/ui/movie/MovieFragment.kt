@@ -31,5 +31,10 @@ class MovieFragment : Fragment() {
 
     }
 
+    override fun onDetach() {
+        super.onDetach()
+        movieViewModel.clearData()
+    }
+
 
 }
