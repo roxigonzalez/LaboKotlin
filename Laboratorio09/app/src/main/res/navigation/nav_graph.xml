@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/nav_graph"
+    app:startDestination="@id/homeFragment2">
+    <fragment
+        android:id="@+id/homeFragment2"
+        android:name="com.example.laboratorio09.HomeFragment"
+        android:label="HomeFragment" >
+        <action
+            android:id="@+id/action_homeFragment2_to_coroutinesFragment2"
+            app:destination="@id/coroutinesFragment2" />
+        <action
+            android:id="@+id/action_homeFragment2_to_mainThreadFragment2"
+            app:destination="@id/mainThreadFragment2" />
+    </fragment>
+    <fragment
+        android:id="@+id/mainThreadFragment2"
+        android:name="com.example.laboratorio09.MainThreadFragment"
+        android:label="MainThreadFragment" />
+    <fragment
+        android:id="@+id/coroutinesFragment2"
+        android:name="com.example.laboratorio09.CoroutinesFragment"
+        android:label="CoroutinesFragment" />
+</navigation>
